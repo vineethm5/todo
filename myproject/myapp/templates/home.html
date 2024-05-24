@@ -15,7 +15,7 @@
 
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5),
 			0 6px 20px 0 rgba(0,0,0,0.39);
-background: lightpink;
+background: lightblue;
 margin-bottom : 5%;
 border-radius: 25px;
 padding : 2%;
@@ -31,7 +31,7 @@ text-overflow: ellipsis;
 
 	text-align: center;
 	padding: 3%;
-	background: pink;
+	background: lightblue;
 	border-radius: 25px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4),
 				0 6px 20px 0 rgba(0,0,0,0.36);
@@ -51,7 +51,7 @@ text-overflow: ellipsis;
 {% endif %}
 
 <center class="row">
-	<h1><i>__TODO LIST__</i></h1>
+	<h1><i>TODO LIST</i></h1>
 	<hr />
 </center>
 
@@ -68,7 +68,7 @@ text-overflow: ellipsis;
 		{{i.details}}
 		<br />
 		<br />
-		<form action="/del/{{i.id}}" method="POST" style=" padding-right: 4%; padding-bottom: 3%;">
+		<form action="/dele/{{i.id}}" method="POST" style=" padding-right: 4%; padding-bottom: 3%;">
 		{% csrf_token %}
 		<button value="remove" type="submit" class="btn btn-primary" style="float: right;"><span class="glyphicon glyphicon-trash"></span>  remove</button>
 		</form>
